@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GlobalCounter from '../components/counter/global-counter'
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="space-y-8 mx-auto max-w-md px-4 py-20 text-white">
+		<h1 class="text-4xl">React with global state</h1>
+		<GlobalCounter client:load/>
+		<hr class="pb-8" />
+		<GlobalCounter client:load/>
+	</main>
+</Layout>

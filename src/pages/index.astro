@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/ui/Card.astro'
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="space-y-8 mx-auto max-w-md px-4 py-20 text-white">
+		<h1 class="text-4xl">React Schulung</h1>
+		<Card title="React " body="React Komponenten" href='/react/' />
+		<Card title="React in Astro " body="React in Astro nutzen" href='/react-in-astro/' />
+		<Card title="React with state " body="Wie State in React Komponenten nutzen" href='/react-with-state/' />
+		<Card title="React with lifted state " body="Wie State in React Komponenten in eine höhere Eben heben" href='/react-with-lifted-state/' />
+		<Card title="React with global state " body="'zustand' für globalen State in React Komponenten nutzen" href='/react-with-global-state/' />
+		<Card title="Fetching data " body="Daten in einer React Komponente laden" href='/fetch-data/' />
+	</main>
+</Layout>

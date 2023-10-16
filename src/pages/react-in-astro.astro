@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import UserCard from '../components/user/user-card';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="space-y-8 mx-auto max-w-md px-4 py-20 text-white">
+		<h1 class="text-4xl">React in Astro</h1>
+		<div class="bg-blue-500 rounded p-4">
+			<UserCard name='Philip' />
+		</div>
+		<section class="flex gap-4">
+			<div class="h-20 w-20 rounded-full bg-blue-500 flex justify-center items-center">Astro</div>
+			<div class="h-20 w-20 rounded-full bg-blue-700 flex justify-center items-center">React</div>
+		</section>
+	</main>
+</Layout>
