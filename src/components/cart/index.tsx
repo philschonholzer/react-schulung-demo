@@ -1,9 +1,7 @@
-import { useArticle } from '../article/use-article'
-import useCart, { useArticlesInCart } from './use-cart'
+import { removeFromCart, useArticlesInCart } from './use-cart'
 
 export default function Cart() {
   const articlesInCart = useArticlesInCart()
-  const removeFromCart = useCart((state) => state.removeFromCart)
   return articlesInCart.length > 0 ? (
     <div>
       <ul>
